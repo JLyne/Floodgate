@@ -51,7 +51,7 @@ public final class UnlinkAccountCommand implements FloodgateCommand {
 
     @Override
     public Command<PlayerAudience> buildCommand(CommandManager<UserAudience> commandManager) {
-        return commandManager.commandBuilder("unlinkaccount",
+        return commandManager.commandBuilder("unlinkbedrock",
                 Description.of("Unlink your Java account from your Bedrock account"))
                 .senderType(PlayerAudience.class)
                 .permission(Permission.COMMAND_UNLINK.get())

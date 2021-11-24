@@ -39,9 +39,9 @@ player-link:
 
   # The following three options only apply when 'enable-own-linking' is set to 'true'
 
-  # Whether to allow the use of /linkaccount and /unlinkaccount
+  # Whether to allow the use of /linkbedrock and /unlinkbedrock
   # You can also use allow specific people to use the commands using the
-  # permissions floodgate.command.linkaccount and floodgate.command.unlinkaccount.
+  # permissions floodgate.command.linkbedrock and floodgate.command.unlinkbedrock.
   # This is only for linking, already connected people will stay connected
   allowed: true
   # The amount of time until a link code expires in seconds.
