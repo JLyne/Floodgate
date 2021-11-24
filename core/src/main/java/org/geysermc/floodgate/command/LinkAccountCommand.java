@@ -57,7 +57,7 @@ public final class LinkAccountCommand implements FloodgateCommand {
 
     @Override
     public Command<PlayerAudience> buildCommand(CommandManager<UserAudience> commandManager) {
-        return commandManager.commandBuilder("linkaccount",
+        return commandManager.commandBuilder("linkbedrock",
                 Description.of("Link your Java account with your Bedrock account"))
                 .senderType(PlayerAudience.class)
                 .permission(Permission.COMMAND_LINK.get())
