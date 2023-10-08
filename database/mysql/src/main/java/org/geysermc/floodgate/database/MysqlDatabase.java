@@ -55,9 +55,15 @@ public class MysqlDatabase extends CommonPlayerLink {
     try {
       MysqlConfig config = getConfig(MysqlConfig.class);
 
+      String url = "jdbc:mysql://" +
+              config.getHostname() +
+              ":" + config.getPort() +
+              "/" + config.getDatabase() +
+              "?" + config.getOptions();
+
       HikariConfig hikariConfig = new HikariConfig();
       hikariConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
-      hikariConfig.setJdbcUrl("jdbc:mysql://" + config.getHostname() + "/" + config.getDatabase());
+      hikariConfig.setJdbcUrl(url);
       hikariConfig.setUsername(config.getUsername());
       hikariConfig.setPassword(config.getPassword());
       hikariConfig.setPoolName("floodgate-linking-mysql");
