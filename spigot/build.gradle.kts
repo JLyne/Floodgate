@@ -5,8 +5,8 @@ var gsonVersion = "2.8.5"
 indra {
     javaVersions {
         // For Folia
-        target(8)
-        minimumToolchain(17)
+        target(21)
+        minimumToolchain(21)
     }
 }
 
